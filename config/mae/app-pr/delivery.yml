@@ -42,7 +42,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/mlarge405/app-pr-mae@sha256:70e66819d111049e347f44551bca93c3bba2503a0146e232f07337d474e685b2
+        image: index.docker.io/mlarge405/app-pr-mae@sha256:540f847f8f81457ad67a6f83888ac4383f21aae6f1b36e22b9bb16ef78728949
         name: workload
         ports:
         - containerPort: 8080
@@ -55,6 +55,6 @@ spec:
   - latestRevision: true
     percent: 0
     tag: latest
-  - revisionName: app-pr-main/2b95a6d48c26d6cec2839cf22a14a1591487d527
+  - revisionName: app-pr-main/6d0a8cee87727c3c34521b065e17db7f0e1c1687
     percent: 100
 
